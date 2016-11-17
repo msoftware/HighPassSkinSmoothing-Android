@@ -27,7 +27,7 @@ import com.amnix.skinsmoothness.AmniXSkinSmooth;
 import java.io.IOException;
 
 public class MainActivity extends AppCompatActivity {
-    AmniXSkinSmooth amniXSkinSmooth = AmniXSkinSmooth.getInstance();
+    private final AmniXSkinSmooth amniXSkinSmooth = AmniXSkinSmooth.getInstance();
     private ImageView imageView;
     private Bitmap bitmap, processed;
     private EditText smooth, white;
@@ -87,6 +87,8 @@ public class MainActivity extends AppCompatActivity {
                         amniXSkinSmooth.storeBitmap(bitmap, false);
                         amniXSkinSmooth.initSdk();
                         amniXSkinSmooth.startFullBeauty(smoothR, whiteR);
+                        amniXSkinSmooth.startSkinSmoothness(smoothR);
+                        amniXSkinSmooth.startSkinWhiteness(whiteR);
                         processed = amniXSkinSmooth.getBitmapAndFree();
                         amniXSkinSmooth.unInitSdk();
                         return null;
