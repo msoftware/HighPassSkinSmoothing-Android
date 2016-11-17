@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
                     protected Void doInBackground(Void... params) {
 
                         amniXSkinSmooth.storeBitmap(bitmap, false);
-                        amniXSkinSmooth.initSdk();git
+                        amniXSkinSmooth.initSdk();
                         amniXSkinSmooth.startFullBeauty(smoothR, whiteR);
                         amniXSkinSmooth.startSkinSmoothness(smoothR);
                         amniXSkinSmooth.startSkinWhiteness(whiteR);

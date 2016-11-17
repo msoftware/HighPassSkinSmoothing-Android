@@ -78,6 +78,10 @@ Browse DemoApp and Library for More Information.
 
 __Please run the demo app on an actual device instead of Emulator.__ 
 
+##Demo
+
+Download [Demo Apk](https://github.com/AmniX/HighPassSkinSmoothing-Android/blob/master/app-debug.apk) to test this Library.
+
 ##Installation
 
 For now, You have to Clone or download this repo and include __skinsmoothness__ as a android Module.
